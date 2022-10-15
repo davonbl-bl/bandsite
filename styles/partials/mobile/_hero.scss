@@ -1,0 +1,49 @@
+@use '../fonts' as *;
+@use '../variables' as *;
+@use './global' as *;
+
+// @use './variables' as *; 
+// @use './fonts' as *;
+// @use './global' as *; 
+
+.hero{
+    background-image: url("../../../assets/images/hero-bio.jpg");
+    background-size: cover;
+    // background:rgba(148, 149, 149, 0.5); // should possibly change this into a variable
+    color: $heroTextColor; 
+    display:flex;    
+    flex-direction: column;
+    height: 150px; 
+    justify-content: center; 
+    // opacity: 50%;  
+    // padding-left: 24px; 
+    // padding-right: 24px;     
+    
+    // background-position: center; 
+    // background-repeat: no-repeat; 
+    // background-color:gray;
+
+
+    // margin-left: 24px;
+    // margin-right: 24px;
+
+
+
+    
+
+    &__title{
+        // display: flex;
+        // flex-direction: column;
+        // align-content: center;
+
+        // font-family: "Avenir Next Regular"; 
+        font-family: 'Avenir Next Demi';
+        font-size:1.5rem;
+        line-height: 2rem;
+        font-weight: 700;
+
+        // padding-right: 16px;
+        padding-left: 16px;
+    }
+
+}

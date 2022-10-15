@@ -1,0 +1,20 @@
+@use '../fonts' as *;
+@use '../variables' as *;
+@use './global' as *;
+
+// @use './variables' as *; 
+// @use './fonts' as *;
+
+
+
+.photo-gallery{
+
+    padding-right: 16px;
+    padding-left: 16px; 
+    background-color: rgb(250,250,250);
+
+    &__images{
+        width: 100%;
+        padding-bottom: 16px;
+    }
+}
