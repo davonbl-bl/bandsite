@@ -1,9 +1,21 @@
+
+/**************
+COLORS
+***************/
+
 $footerNHeaderColor: #323232;
-
-
+$heroBgColor: #323232; 
 $footerNHeaderTextColor: #FFFFFF;
 $heroTextColor:#FFFFFF;
 $pargraphTextColor:#AFAFAF; 
 
 $dividerColorLine: #E1E1E1;
 $altLightBackgroundColor: #FAFAFA; 
+
+/**************
+MEDIA QUERIES
+***************/
+
+
+$tablet-breakpoint: 768px;
+$desktop-breakpoint: 1024px;
