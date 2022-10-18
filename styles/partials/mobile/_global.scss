@@ -3,8 +3,6 @@
 @use '../variables' as *;
 @use '../mixins' as *; 
 
-// @use './variables' as *; 
-// @use './fonts' as *;
 
 /* Box-sizing resets */ 
 html,
@@ -25,11 +23,10 @@ body {
         @include tablet{
             display:flex;
             //if needed
-            gap:0px;
-            // padding-top: 7px;
-            // padding-bottom: 7px;
-            padding-left: 10px;
-            padding-right: 10px;
+            gap:0rem;
+
+            padding-left: .625rem;
+            padding-right: .625rem;
             
         }
 
@@ -51,18 +48,18 @@ body {
     text-decoration: none;
     font-size: 1.5rem;
     font-weight: 500; 
-    padding-top: 8px;
+    padding-top: .5rem;
 
     @include tablet{
-        padding-left: 21px;
+        padding-left: 1.3125rem; 
         // align-self:center;
-        padding-top: 20px;
-        padding-bottom: 20px;
+        padding-top: 1.25rem;
+        padding-bottom: 1.25rem;
     }
 
     @include desktop{
-        padding-left: 100px;
-        padding-right: 40px;
+        padding-left: 6.25rem;
+        padding-right: 2.5rem;
     }
 
 
@@ -74,25 +71,25 @@ body {
     // justify-content: space-evenly;  
     list-style: none;  
     margin: 0;
-    padding-left: 0px; 
+    padding-left: 0rem; 
 
     @include tablet{
         width: 33%; 
         text-align: center;
-        padding-left: 20px;
-        padding-top: 23px;
+        padding-left: 1.25rem;
+        padding-top: 1.4375rem;
         justify-content: space-evenly;
         }
 
     @include desktop{
-        padding-left: 10px;
+        padding-left: .625rem;
         width: 33%;
         text-align: center; 
         justify-content: initial;
     }
 
     &-item{
-        padding-bottom: 6px;
+        padding-bottom: .375rem;
         width:50%;
         text-align: center;
 
@@ -104,7 +101,7 @@ body {
 
             &:hover{
                 width:50%;
-                border-bottom: 3px solid white;
+                border-bottom: .1875rem solid white;
 
 
             @include tablet{
@@ -147,24 +144,24 @@ body {
 
 .footer{
     background-color: $footerNHeaderColor;
-    padding-bottom: 5px; 
-    padding-top: 5px;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-bottom: .3125rem; 
+    padding-top: .3125rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
 
     @include tablet{
-        padding-left: 54px;
-        padding-top: 30px;
-        padding-right: 110px;
-        padding-bottom: 30px;
+        padding-left: 3.375rem;
+        padding-top: 1.875rem;
+        padding-right: 6.875rem;
+        padding-bottom: 1.875rem;
 
     }
 
     @include desktop{
-        padding-left: 120px;
-        padding-top: 30px;
-        padding-right:120px;
-        padding-bottom: 30px;
+        padding-left: 7.5rem;
+        padding-top: 1.875rem;
+        padding-right:7.5rem;
+        padding-bottom: 1.875rem;
     }
 
     
@@ -184,7 +181,7 @@ body {
 
         &__first-row{
             display: flex;
-            gap: 38px;
+            gap: 2.375rem;
         }
 
         &__main-title--desktop{
@@ -192,7 +189,7 @@ body {
             font-family: "Avenir Next Regular";
             color: #FFFFFF;
             text-decoration: none;
-            padding-top: 13px;
+            padding-top: .8125rem;
         }
     }
 
@@ -201,7 +198,7 @@ body {
 
         &__first-row{
             display:flex;
-            gap:50px;
+            gap:3.125rem;
         }
 
         &__main-title--desktop{
@@ -209,8 +206,8 @@ body {
             font-family: "Avenir Next Regular";
             color: #FFFFFF;
             text-decoration: none;
-            padding-top: 13px;
-            padding-left: 260px;
+            padding-top: .8125rem;
+            padding-left: 16.25rem;
         }
             
     }
@@ -219,13 +216,13 @@ body {
     &__second-row{
         display: flex;
         flex-direction: column;
-        gap: 12px;
+        gap: .75rem;
 
         @include tablet{
             display: flex;
             flex-direction: initial;
-            gap: 71px;
-            padding-top: 10px;
+            gap: 4.4375rem;
+            padding-top: .625rem;
         }
     
 
@@ -233,8 +230,7 @@ body {
         @include desktop{
             display: flex;
             flex-direction: initial;
-            gap: 75px;
-            padding-top: 10px
+            gap: 4.6875rem;
         }
     }
     
@@ -244,26 +240,21 @@ body {
         font-family: 'Avenir Next Demi';
 
         @include tablet{
-            font-size: 30px;
+            font-size: 1.875rem;
             margin: 0px;
-            padding-top: 10px;
+            padding-top: .625rem;
             width: 126%;
         }
 
-        @include desktop{
-            font-size: 30px;
-            margin: 0px;
-            padding-top: 10px;
-        }
     }
 
     &__list{
         display: flex;
-        margin-bottom: 6px;
+        margin-bottom: .375rem;
         padding-left: 0px;
         list-style: none;
         width: 38%;
-        gap: 18px;
+        gap: 1.125rem;
 
         @include tablet{
             margin-bottom: initial;
@@ -273,7 +264,7 @@ body {
         @include desktop{
 
             margin-bottom: initial;
-            gap:34px; 
+            gap:2.125rem; 
         }
 
 
@@ -285,8 +276,8 @@ body {
         line-height:1.125rem;
 
         @include desktop{
-            font-size: 16px; 
-            line-height: 25px;
+            font-size: 1rem; 
+            line-height: 1.5625rem;
         }
         
     }
@@ -300,7 +291,7 @@ body {
         font-family: "Avenir Next Regular";
         color: $footerNHeaderTextColor;
         text-decoration: none;
-        padding-top: 10px; 
+        padding-top: .625rem; 
 
         @include tablet{
             display: none; 
@@ -310,15 +301,15 @@ body {
     }
 
     &__legal--info{
-        padding-top: 55px;
+        padding-top: 3.4375rem;
     }
 
     &__copyright{
         font-family: "Avenir Next Regular";
-        font-size: 10px;
+        font-size: .625rem;
 
         @include tablet{
-            font-size: 14px; 
+            font-size: .875rem; 
         }
 
         }

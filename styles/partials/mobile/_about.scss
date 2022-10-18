@@ -28,31 +28,31 @@
 
     @include tablet{
 
-        font-size: 40px;
+        font-size: 2.5rem;
         margin-bottom: revert;
-        padding-top: 20px;
-        padding-bottom: 10px;
-        padding-left: 27px;
-        margin-bottom: 20px;
+        padding-top: 1.25rem;
+        padding-bottom: .625rem;
+        padding-left: 1.6875rem;
+        margin-bottom: 1.25rem;
 
     }
 
         @include desktop{
-            font-size: 40px;
-            padding-left: 100px;
-            padding-right: 100px;
-            padding-top: 20px;
-            padding-bottom: 10px;
+            font-size: 2.5rem;
+            padding-left: 6.25rem;
+            padding-right: 6.25rem;
+            padding-top: 1.25rem;
+            padding-bottom: .625rem;
         }
     }
     
     &__image{
 
         width: 100%;
-        padding-left: 16px;
-        padding-right: 14px;
-        max-width: 900px;
-        max-height: 500px;
+        padding-left: 1rem;
+        padding-right: .875rem;
+        max-width: 56.25rem;
+        max-height: 31.25rem;
 
         @include tablet{
             display: block;
@@ -66,33 +66,33 @@
     to write this for the
     footer */
     &__pargraph{
-        font-size: 8px;
+        font-size: .5rem;
         font-weight: 400;
         line-height: 1.125rem;
-        padding-left: 16px;
-        padding-right: 3px;
+        padding-left: 1rem;
+        padding-right: .1875rem;
         width: 98%;
         font-family: 'Avenir Next Bold';
     }
     &__pargraph--one{
-        font-size: 13.3px;
+        font-size: .83125rem;
         width: 101.5%;
-        padding-left: 14px;
+        padding-left: .875rem;
 
         @include tablet{
 
-            font-size: 22px;
-            width: 606.9px;
-            line-height: 30px;
+            font-size: 1.375rem;
+            width: 37.93125rem;
+            line-height: 1.875rem;
             font-family: "Avenir Next Demi";
-            padding-left: 90px;
+            padding-left: 5.625rem;
 
         }
 
         @include desktop{
-            padding-left: 202px;
-            padding-right: 34px;
-            font-size: 23.9px;
+            padding-left: 12.625rem;
+            padding-right: 2.125rem;
+            font-size: 1.49375rem;
             width: 57.5%;
             font-family: 'Avenir Next Demi';
         }
@@ -101,32 +101,32 @@
     @include tablet{
 
         &__pargraph--add-style{
-            font-size: 18.9px;
+            font-size: 1.18125rem;
             width: 57.5%;
             font-family: "Avenir Next bold";
         }
     }
     &__sub-title{
         font-family: 'Avenir Next Demi';
-        padding-left: 16px; 
-        font-size: 15px;
-        padding-top: 5px;
+        padding-left: 1.18125rem; 
+        font-size: .9375rem;
+        padding-top: .3125rem;
 
         @include tablet{
             font-family: "Avenir Next Demi";
-            padding-left: 16px;
-            font-size: 24px;
-            padding-top: 22px;
-            padding-left: 90px;
-            margin-bottom: 10px;
+            padding-left: 1rem;
+            font-size: 1.5rem;
+            padding-top: 1.375rem;
+            padding-left: 5.625rem;
+            margin-bottom: .625rem;
         }
 
             @include desktop{
             font-family: "Avenir Next Demi";
-            padding-left: 16px;
-            font-size: 24px;
-            padding-top: 22px;
-            padding-left: 200px;
+            padding-left: 1rem;
+            font-size: 1.5rem;
+            padding-top: 1.375rem;
+            padding-left: 12.5rem;
         }
     }
 
@@ -139,13 +139,13 @@
         width: 95%;
 
         @include tablet{
-            font-size: 14px;
+            font-size: .875rem;
             font-family: "Avenir Next demi";
             width: 72.5%;
             display: flex;
-            gap: 24px;
-            padding-left: 90px;
-            line-height: 20px;
+            gap: 1.5rem;
+            padding-left: 5.625rem;
+            line-height: 1.25rem;
         }
 
     }
@@ -155,11 +155,11 @@
        &__pargraph-section{
             display: flex;
             width: 70%;
-            gap: 21px;
-            padding-left: 200px;
+            gap: 1.3125rem;
+            padding-left: 12.5rem;
             font-family: 'Avenir Next demi';
-            font-size: 15.6px;
-            line-height: 27px;
+            font-size: .975rem;
+            line-height: 1.6875rem;
         }
     }
 }
