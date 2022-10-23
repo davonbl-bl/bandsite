@@ -1,0 +1,278 @@
+@use '../fonts' as *;
+@use '../variables' as *;
+@use './global' as *;
+@use '../mixins' as *; 
+
+
+.hero-shows{
+    position: relative;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 5.625rem;
+    padding-bottom: 2.5rem;
+
+    @include tablet {
+        padding-top: 8.75rem;
+        padding-bottom: 3.75rem; 
+    }
+
+    @include desktop{
+        padding-top: 11.875rem;
+        padding-bottom: 11.875rem;
+        // flex-direction: row;
+        display: block;
+    }
+
+    &::before {
+        content:' ';
+        position:absolute;
+        top:0px;
+        right:0px;
+        bottom:0px;
+        left:0px;
+        box-shadow: inset 0 0 0 100vh rgb(50,50,50, .5);
+        background-image: url("../../../assets/images/hero-shows.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+
+    &__subtitle{
+        position: relative;
+        font-family: "Avenir Next Regular";
+        font-size: .875rem;
+        padding-left: 1rem;
+        font-weight: 500;
+        margin-top: -3.5rem;
+
+        @include tablet{
+            padding-left: 1.75rem;
+            font-family: 'Avenir Next Demi';
+            font-size: 1.25rem;
+        }
+        
+        @include desktop{
+            // width: 228%;
+            /* margin-left: 83px; */
+            padding-left: 102px;
+        }
+
+
+    }
+
+    &__title{
+
+        position: relative;
+        font-family: "Avenir Next Demi";
+        font-size: 1.5rem;
+        line-height: 2rem;
+        font-weight: 700;
+        padding-left: 1rem;
+        margin-top: 0px;
+
+        @include tablet{
+            font-size: 2.8125rem;
+            padding-left: 1.75rem;
+            width: 55%;
+            line-height: 3.3125rem;
+        }
+
+        @include desktop{
+            // width: 117%;
+            // margin-left: -84%;
+
+            font-size: 3.125rem;
+            padding-left: 6.25rem;
+            width: 43%;
+            /* margin-left: -84%; */
+            /* justify-self: flex-start; */
+            display: inline-block;
+        }
+
+    }
+
+    &__iframe{
+        position: relative;
+        padding-left: 1rem;
+        width: 93%;
+        height: 5.6875rem; 
+
+        @include tablet{
+            padding-left: 1.75rem;
+            width: 40%;
+            height: 10rem; 
+        }
+
+        @include desktop{
+            display: inline-block;
+            padding-left: 0px;
+            /* margin-top: 15px; */
+            margin-bottom: -69px;
+        }
+    }
+
+
+}
+
+
+
+
+.shows__title{
+    font-family: 'Avenir Next Demi';
+    // font-size:1.875rem; 
+    font-size: 1.67rem;
+    padding-left: 1rem; 
+}
+
+.shows-container{
+
+    padding-left: 1rem;
+    padding-bottom: 3.125rem;
+
+    &__mobile--subtitles{
+        display:none; 
+    }
+    
+    &__event{
+        position:relative; 
+    }
+
+    &__event:hover{
+        background-color: #FAFAFA;
+    }
+
+    &__event:active{
+        background-color: #E1E1E1;
+    }
+
+
+
+    &__event-subtitle{
+        font-family: 'Avenir Next Demi';
+        color: gray;
+        font-weight: 300;
+        font-size: .71875rem;
+    }
+
+    &__event-info{
+        font-family: 'Avenir Next Demi';
+        color: black;
+        font-weight:300;
+    }
+
+    &__event-info--bold{
+        font-family: 'Avenir Next Demi';
+        color: black;
+        font-size: 1rem ;
+    }
+
+
+    &__event--button{
+        padding-right: 83px;
+        padding-left: 83px;
+        padding-top: 13px;
+        padding-bottom: 13px;
+        border-radius: 4px;
+        background-color: black;
+        color: white;
+        font-family: "Avenir Next Demi";
+        /* margin-top: 10px; */
+        /* margin-top: -2px; */
+        /* border-bottom: 3px solid gray; */
+        display: inline-block;
+    }
+
+
+// this is inside the shows-container for the tablet media query
+    @include tablet{
+
+        &__mobile--subtitles{
+            display: flex;
+            font-family: "Avenir Next Demi";
+            color: gray;
+            font-weight: 300;
+            justify-content: space-between;
+            width: 59.5%;
+            padding-left: 0px;
+            /* gap: 257px; */
+            /* justify-content: space-evenly; */
+            margin-left: 29px;
+            //gap: 32px;
+        }
+
+        // it is off because I need to turn on the div to show
+        //the subtitles i mean
+        &__event-subtitle{
+            display: none; 
+        }
+
+        &__event{
+            display: flex;
+            /* justify-content: space-around; */
+            /* padding-left: 0px; */
+            justify-content: space-around;
+            gap: 57px;
+            padding-left: 20px;
+            padding-right: 20px;
+            border-bottom: 1px solid gray;
+            padding-bottom: 15px;
+            padding-top: 15px;
+        }
+
+        &__event--button{
+            padding-right: 45px;
+            padding-left: 45px;
+            padding-top: 11px;
+            padding-bottom: 11px;
+            border-radius: 4px;
+            background-color: black;
+            color: white;
+            font-family: "Avenir Next Demi";
+            margin-top: 5px;
+            /* margin-top: -2px; */
+            /* border-bottom: 3px solid gray; */
+            /* display: inline-block; */
+            margin-bottom: 10px;
+        }
+        
+
+        // this could potentially be the challenging one
+        // im think that I could just flex the default-top container
+        //it could be its own div potentially
+        //currently im thinking that if I put the divs inside the section
+        //they will be render invisible until it hits the tablet
+        //where areas the htags wont be
+
+        //at the bottom here I'm commenting out and hope that the whole
+        //top section will be resolved 
+
+        // &__default-top-subtitle{
+        //     display: flex;
+        //     justify-content: space-around;
+        //     width: 68%;
+        //     gap: 57px;
+        //     /* justify-content: flex-start; */
+        //     padding-left: 20px;
+        //     padding-right: 20px;
+        // }
+
+
+        // &__default-top, &__default-bottoms{
+        //     display: flex;
+        //     /* justify-content: space-around; */
+        //     /* padding-left: 0px; */
+        //     justify-content: space-around;
+        //     align-items: flex-start;
+        //     padding-left: 20px;
+        //     padding-right: 20px;
+        // }
+    }
+}
+
+@include tablet{ 
+    .shows__title{
+        padding-left: 1.75rem;
+    }
+}
+

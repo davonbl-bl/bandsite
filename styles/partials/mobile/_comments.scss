@@ -1,0 +1,148 @@
+@use '../fonts' as *;
+@use '../variables' as *;
+@use './global' as *;
+@use '../mixins' as *; 
+
+
+.comments{
+
+    background-color: gray;
+    padding-top: 0.0625rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 20px;
+    // height:500px; 
+
+    // &__logo-image{
+    //     border-radius: 50%;
+    //     width:30px; 
+    //     height: 28px; 
+    //     max-width: 36px;
+    //     max-height: 36px;
+    //     height: 28px;
+    // }
+
+
+    &__container{
+        display:flex; 
+        // width:100%; 
+        gap:14px;
+        margin: auto;
+        padding-bottom: 25px;
+
+        .container__logo-image{
+            border-radius: 50%;
+            width: 36px;
+            max-width: 36px;
+            max-height: 36px;
+            height: 37px;
+            margin-top: 21px;
+            margin-bottom: 21px;
+        }
+        // &__logo-image{
+        //     border-radius: 50%;
+        //     width:30px; 
+        //     height: 28px; 
+        //     max-width: 36px;
+        //     max-height: 36px;
+        //     height: 28px;
+        // }
+    }
+
+    &__title{
+        font-family: 'Avenir Next Demi';
+        // font-size:1.875rem; 
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+}
+
+.form{
+    // width: 85%; 
+    color: black; 
+
+    &__section{
+        width:100%; 
+        display:flex;
+        // flex-direction: column;
+    }
+
+    &__section--input{
+
+    background-color: #b5b3b3;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 4px;
+    color: black;
+    /* max-width: 368px; */
+    min-width: 211px;
+
+
+    }
+
+    &__section--comment-box{
+        height: 69px;
+        text-decoration: none;
+        // max-width: 210px;
+        /* min-width: 178px; */
+        /* max-height: 100%; */
+        // width: 100%;
+        padding-left: 4px;
+            
+    }
+
+    &__section--button{
+        padding-right: 30px;
+        padding-left: 77px;
+        width: 104%;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        border-radius: 4px;
+        background-color: black;
+        color: white;
+        font-family: "Avenir Next Demi";
+        margin-top: 10px;
+        /* max-width: 385px; */
+        // min-width: 218px;
+}
+    
+
+    &__section--label{
+        padding-bottom:5px;
+        font-family: 'Avenir Next Bold';
+        color: black;
+        font-size: 12.5px;
+    }
+
+    &__section--comment-logo{
+        font-family: 'Avenir Next Bold';
+        padding-top: 15px;
+        padding-bottom: 5px;
+        font-size: 12.5px;
+    }
+}
+
+
+.post-info-container{
+    width:100%;
+    // height:250px;
+    background-color: white;
+    // border-top: 3px solid black;
+}
+
+.current-comment{
+    // width:100%;
+    // // height:50px;
+    // background-color: red; 
+
+    width: 100%;
+    background-color: rgb(255,255,255);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-bottom: 3px solid black;
+
+
+}
+

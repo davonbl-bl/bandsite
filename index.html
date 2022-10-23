@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./styles/bio.css">
+    <script src="./pages/scripts/index-page.js" defer></script>
 </head>
 <body>
     <!-- Header  -->
@@ -23,7 +24,7 @@
                     <a href="#" class="nav__list-link">Biography</a>
                 </li>
                 <li class="nav__list-item nav__list--two">
-                    <a href="#" class="nav__list-link">Shows</a>    
+                    <a href="./pages/shows.html" class="nav__list-link">Shows</a>    
                 </li>
             </ul>
         </nav>
@@ -101,6 +102,45 @@
             <img class="photo-gallery__images--add" src="./assets/images/Photo-gallery-8.jpg">
             <img class="photo-gallery__images--add" src="./assets/images/Photo-gallery-9.jpg">
         </div>
+    </section>
+
+    <!-- Comments-Section -->
+    <section class="comments">
+        <h3 class="comments__title">Join the Conversation</h3>
+    <div class="comments__container container">
+        <img class="container__logo-image" src="./assets/images/Mohan-muruge.jpg">
+
+        <form class="form">
+            <label for ="fullName" class = "form__section form__section--label"> NAME</label>
+            <input type ="text" name="fullName" placeholder="Enter your name" class="fullName form__section form__section--input">
+
+            <label for ="comment" class="form__section form__section--comment-logo">COMMENT</label>
+            <textarea class=" comment comment-box form__section form__section--comment-box" name="comment">Add a new comment</textarea>
+            <button type="submit" class="form__section form__section--button"> COMMENT</button>
+            
+        </form>
+    </div>
+
+
+<!-- This is being kept for study purposes -->
+<!-- JS: line- 73: div.innerText= ""; line 125 div.currentForms.appendChild(currentComment) -->
+    
+    <!-- <div class="post-info-container">
+        <div class="current-comment">
+            <p class="current-comment__name">
+               James Cool
+            </p>
+            <p class="current-comment__date"> 02/21/2019</p>
+            <p class="current-comment__comment"> Let us appreciate this for what it is and what it contains.</p>
+        </div>
+    </div> -->
+
+
+    <!-- create a comment section with JS, and that also applies with the comments which will then be append to the div, and then you create
+    the comment section where someone can input some info and have it posted inside the created JS div -->
+
+
+
     </section>
 
     <!-- Footer  -->
