@@ -55,7 +55,7 @@
         @include desktop{
             // width: 228%;
             /* margin-left: 83px; */
-            padding-left: 102px;
+            padding-left: 6.375rem;
         }
 
 
@@ -169,11 +169,11 @@
 
 
     &__event--button{
-        padding-right: 83px;
-        padding-left: 83px;
-        padding-top: 13px;
-        padding-bottom: 13px;
-        border-radius: 4px;
+        padding-right: 5.1875rem;
+        padding-left: 5.1875rem;
+        padding-top: .8125rem;
+        padding-bottom: .8125rem;
+        border-radius: .25rem;
         background-color: black;
         color: white;
         font-family: "Avenir Next Demi";
@@ -197,7 +197,7 @@
             padding-left: 0px;
             /* gap: 257px; */
             /* justify-content: space-evenly; */
-            margin-left: 29px;
+            margin-left: 1.8125rem;
             //gap: 32px;
         }
 
@@ -212,28 +212,28 @@
             /* justify-content: space-around; */
             /* padding-left: 0px; */
             justify-content: space-around;
-            gap: 57px;
-            padding-left: 20px;
-            padding-right: 20px;
-            border-bottom: 1px solid gray;
-            padding-bottom: 15px;
-            padding-top: 15px;
+            gap: 3.5625rem;
+            padding-left: 1.25rem;
+            padding-right: 1.25rem;
+            border-bottom: .0625rem solid gray;
+            padding-bottom: .9375rem;
+            padding-top: .9375rem;
         }
 
         &__event--button{
-            padding-right: 45px;
-            padding-left: 45px;
-            padding-top: 11px;
-            padding-bottom: 11px;
-            border-radius: 4px;
+            padding-right: 2.8125rem;
+            padding-left: 2.8125rem;
+            padding-top: .6875rem;
+            padding-bottom: .6875rem;
+            border-radius: .25rem;
             background-color: black;
             color: white;
             font-family: "Avenir Next Demi";
-            margin-top: 5px;
+            margin-top: .3125rem;
             /* margin-top: -2px; */
             /* border-bottom: 3px solid gray; */
             /* display: inline-block; */
-            margin-bottom: 10px;
+            margin-bottom: .625rem;
         }
     }
 }
