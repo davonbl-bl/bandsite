@@ -1,9 +1,9 @@
 @use './partials/variables' as *;
 @use './partials/mixins' as *; 
 
-@use './partials/mobile/global' as *;
-@use './partials/mobile/hero' as *;
-@use './partials/mobile/about' as *;
-@use './partials/mobile/photo-gallery' as *; 
-@use './partials/mobile/comments' as *;
-@use './partials/mobile/shows' as *; 
+@use './global' as *;
+@use './hero' as *;
+@use './about' as *;
+@use './photo-gallery' as *;
+@use './comments' as *;
+@use './shows' as *;

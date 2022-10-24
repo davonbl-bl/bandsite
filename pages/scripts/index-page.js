@@ -126,6 +126,8 @@ const displayComments = () =>{
         console.log()
     
         commentForm.appendChild(currentComment);
+
+        console.log(currentComment); 
         
     }
 

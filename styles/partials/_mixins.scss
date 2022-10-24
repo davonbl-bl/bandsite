@@ -1,6 +1,5 @@
 @use './variables' as *;
-@use './fonts' as *;
-
+@use './fonts' as *; 
 
 @mixin getRidOf {
     @media screen and (min-width: 120px){

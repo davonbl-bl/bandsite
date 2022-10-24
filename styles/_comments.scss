@@ -1,7 +1,8 @@
-@use '../fonts' as *;
-@use '../variables' as *;
-@use './global' as *;
-@use '../mixins' as *; 
+@use './partials/fonts' as *;
+
+@use './partials/variables' as *;
+@use './partials/mixins' as *;
+@use './global' as *; 
 
 
 .comments{

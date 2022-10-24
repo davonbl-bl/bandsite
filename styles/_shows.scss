@@ -1,7 +1,7 @@
-@use '../fonts' as *;
-@use '../variables' as *;
+@use './partials/fonts' as *;
+@use './partials/variables' as *;
 @use './global' as *;
-@use '../mixins' as *; 
+@use './partials/mixins' as *;
 
 
 .hero-shows{
@@ -235,7 +235,17 @@
             /* display: inline-block; */
             margin-bottom: 10px;
         }
-        
+    }
+}
+
+@include tablet{ 
+    .shows__title{
+        padding-left: 1.75rem;
+    }
+}
+
+
+
 
         // this could potentially be the challenging one
         // im think that I could just flex the default-top container
@@ -267,12 +277,3 @@
         //     padding-left: 20px;
         //     padding-right: 20px;
         // }
-    }
-}
-
-@include tablet{ 
-    .shows__title{
-        padding-left: 1.75rem;
-    }
-}
-
