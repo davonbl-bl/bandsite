@@ -18,14 +18,6 @@ let newAddItHereToo = document.querySelector(".shows");
 newAddItHereToo.appendChild(newShowsTitle);
 newAddItHereToo.appendChild(newShowsContainer); 
 
-/*
-
-    What I will first create is an arrow function container where the data from the API
-    will be placed in. Soon after I will create an axios container where I will request
-    the data through get, and see where it takes me from there. Hope it works. 
-
-*/
-
 const axiosGetShows = () => {
     axios.get(`https://project-1-api.herokuapp.com/showdates?api_key=${pKey}`
     ).then((res) => {
@@ -45,8 +37,6 @@ const newDisplayShows = (showObjects) => {
 
     for (let i= 0; i <showObjects.length; i++) {
 // id, data, place, location
-// I can also add some other stuff that would connect to the visual of the design 
-    
         let newId = document.createElement('p');
         newId.classList.add("shows-container__event-info");
         newId.innerText = showObjects[i].id;
