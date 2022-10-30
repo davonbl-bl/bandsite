@@ -46,7 +46,7 @@
 
     &__title{
         position: relative; 
-        font-family: 'Avenir Next Demi';
+        font-family: 'Avenir Next Demi', Arial, Helvetica, sans-serif;
         font-size:1.5rem;
         line-height: 2rem;
         font-weight: 700;
@@ -88,10 +88,10 @@
         padding-left: 1rem;
         padding-right: 1rem;
         margin-bottom: .5625rem;
-        font-family: 'Avenir Next Demi';
+        font-family: 'Avenir Next Demi', Arial, Helvetica, sans-serif;
 
     &__title-add{
-        font-family: 'Avenir Next Demi';
+        font-family: 'Avenir Next Demi', Arial, Helvetica, sans-serif;
     }
 
     @include tablet{
@@ -140,7 +140,7 @@
         padding-left: 1rem;
         padding-right: .1875rem;
         width: 98%;
-        font-family: 'Avenir Next Bold';
+        font-family: 'Avenir Next Bold', Arial, Helvetica, sans-serif;
     }
     &__pargraph--one{
         font-size: .83125rem;
@@ -152,7 +152,7 @@
             font-size: 1.375rem;
             width: 37.93125rem;
             line-height: 1.875rem;
-            font-family: "Avenir Next Demi";
+            font-family: "Avenir Next Demi", Arial, Helvetica, sans-serif;
             padding-left: 5.625rem;
 
         }
@@ -162,7 +162,7 @@
             padding-right: 2.125rem;
             font-size: 1.49375rem;
             width: 57.5%;
-            font-family: 'Avenir Next Demi';
+            font-family: 'Avenir Next Demi', Arial, Helvetica, sans-serif;
         }
     }
 
@@ -171,17 +171,17 @@
         &__pargraph--add-style{
             font-size: 1.18125rem;
             width: 57.5%;
-            font-family: "Avenir Next bold";
+            font-family: "Avenir Next bold", Arial, Helvetica, sans-serif;
         }
     }
     &__sub-title{
-        font-family: 'Avenir Next Demi';
+        font-family: 'Avenir Next Demi', Arial, Helvetica, sans-serif;
         padding-left: 1.18125rem; 
         font-size: .9375rem;
         padding-top: .3125rem;
 
         @include tablet{
-            font-family: "Avenir Next Demi";
+            font-family: "Avenir Next Demi", Arial, Helvetica, sans-serif;
             padding-left: 1rem;
             font-size: 1.5rem;
             padding-top: 1.375rem;
@@ -190,7 +190,7 @@
         }
 
             @include desktop{
-            font-family: "Avenir Next Demi";
+            font-family: "Avenir Next Demi", Arial, Helvetica, sans-serif;
             padding-left: 1rem;
             font-size: 1.5rem;
             padding-top: 1.375rem;
@@ -202,13 +202,13 @@
     &__pargraph--two{
         color: rgb(50,50,50); 
         font-size: 0.75rem;
-        font-family: "Avenir Next demi";
+        font-family: "Avenir Next demi", Arial, Helvetica, sans-serif;
         /* font-size: 12px; */
         width: 95%;
 
         @include tablet{
             font-size: .875rem;
-            font-family: "Avenir Next demi";
+            font-family: "Avenir Next demi", Arial, Helvetica, sans-serif;
             width: 72.5%;
             display: flex;
             gap: 1.5rem;
@@ -225,7 +225,7 @@
             width: 70%;
             gap: 1.3125rem;
             padding-left: 12.5rem;
-            font-family: 'Avenir Next demi';
+            font-family: 'Avenir Next demi', Arial, Helvetica, sans-serif;
             font-size: .975rem;
             line-height: 1.6875rem;
         }
@@ -243,7 +243,7 @@
     padding-left: 1rem; 
     background-color: rgb(250,250,250);
     padding-top: .0625rem;
-    font-family: 'Avenir Next Demi';
+    font-family: 'Avenir Next Demi', Arial, Helvetica, sans-serif;
     
 
     @include tablet{
@@ -327,7 +327,7 @@
     }
 
     &__title{
-        font-family: 'Avenir Next Demi';
+        font-family: 'Avenir Next Demi', Arial, Helvetica, sans-serif;
         // font-size:1.875rem; 
         font-size: 1.875rem;
         margin-bottom: .625rem;
@@ -375,20 +375,20 @@
         border-radius: .25rem;
         background-color: black;
         color: white;
-        font-family: "Avenir Next Demi";
+        font-family: "Avenir Next Demi", Arial, Helvetica, sans-serif;
         margin-top: 10px;
 }
     
 
     &__section--label{
         padding-bottom:.3125rem;
-        font-family: 'Avenir Next Bold';
+        font-family: 'Avenir Next Bold', Arial, Helvetica, sans-serif;
         color: black;
         font-size: .78125rem;
     }
 
     &__section--comment-logo{
-        font-family: 'Avenir Next Bold';
+        font-family: 'Avenir Next Bold', Arial, Helvetica, sans-serif;
         padding-top: .9375rem;
         padding-bottom: .3125rem;
         font-size: .78125rem;
@@ -399,7 +399,7 @@
 .post-info-container{
     width:100%;
     background-color: white;
-    font-family:"Avenir Next Regular"; 
+    font-family:"Avenir Next Regular", Arial, Helvetica, sans-serif;
 }
 
 .current-comment{
@@ -409,7 +409,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     border-bottom: 1.5px solid gray;
-    font-family: "Avenir Next regular";
+    font-family: "Avenir Next regular", Arial, Helvetica, sans-serif;
     font-size: 1rem;
     font-weight: 600;
 

@@ -40,7 +40,7 @@
 
     &__subtitle{
         position: relative;
-        font-family: "Avenir Next Regular";
+        font-family: "Avenir Next Regular", Arial, Helvetica, sans-serif ;
         font-size: .875rem;
         padding-left: 1rem;
         font-weight: 500;
@@ -48,7 +48,7 @@
 
         @include tablet{
             padding-left: 1.75rem;
-            font-family: 'Avenir Next Demi';
+            font-family: 'Avenir Next Demi', Arial, Helvetica, sans-serif ;
             font-size: 1.25rem;
         }
         
@@ -64,7 +64,7 @@
     &__title{
 
         position: relative;
-        font-family: "Avenir Next Demi";
+        font-family: "Avenir Next Demi", Arial, Helvetica, sans-serif ;
         font-size: 1.5rem;
         line-height: 2rem;
         font-weight: 700;
@@ -119,7 +119,7 @@
 
 
 .shows__title{
-    font-family: 'Avenir Next Demi';
+    font-family: 'Avenir Next Demi', Arial, Helvetica, sans-serif;
     // font-size:1.875rem; 
     font-size: 1.67rem;
     padding-left: 1rem; 
@@ -149,20 +149,20 @@
 
 
     &__event-subtitle{
-        font-family: 'Avenir Next Demi';
+        font-family: 'Avenir Next Demi', Arial, Helvetica, sans-serif;
         color: gray;
         font-weight: 300;
         font-size: .71875rem;
     }
 
     &__event-info{
-        font-family: 'Avenir Next Demi';
+        font-family: 'Avenir Next Demi', Arial, Helvetica, sans-serif;
         color: black;
         font-weight:300;
     }
 
     &__event-info--bold{
-        font-family: 'Avenir Next Demi';
+        font-family: 'Avenir Next Demi', Arial, Helvetica, sans-serif;
         color: black;
         font-size: 1rem ;
     }
@@ -176,7 +176,7 @@
         border-radius: .25rem;
         background-color: black;
         color: white;
-        font-family: "Avenir Next Demi";
+        font-family: "Avenir Next Demi", Arial, Helvetica, sans-serif;
         /* margin-top: 10px; */
         /* margin-top: -2px; */
         /* border-bottom: 3px solid gray; */
@@ -196,7 +196,7 @@
 
         &__mobile--subtitles{
             display: flex;
-            font-family: "Avenir Next Demi";
+            font-family: "Avenir Next Demi", Arial, Helvetica, sans-serif;
             color: gray;
             font-weight: 300;
             justify-content: space-between;
@@ -233,7 +233,7 @@
             border-radius: .25rem;
             background-color: black;
             color: white;
-            font-family: "Avenir Next Demi";
+            font-family: "Avenir Next Demi", Arial, Helvetica, sans-serif;
             margin-top: .3125rem;
 
             margin-bottom: .625rem;
