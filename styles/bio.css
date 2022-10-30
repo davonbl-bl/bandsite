@@ -456,6 +456,8 @@ body {
     justify-content: space-between;
     gap: 1px;
     justify-items: center;
+    width: 47rem;
+    margin: auto;
   }
   .shows-container__mobile--subtitles {
     display: flex;
@@ -493,6 +495,12 @@ body {
     font-family: "Avenir Next Demi", Arial, Helvetica, sans-serif;
     margin-top: 0.3125rem;
     margin-bottom: 0.625rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .shows-container {
+    width: 60rem;
+    margin: auto;
   }
 }
 

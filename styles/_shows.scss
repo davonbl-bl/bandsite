@@ -193,6 +193,8 @@
         justify-content: space-between;
         gap: 1px;
         justify-items: center;
+        width: 47rem;
+        margin: auto;
 
         &__mobile--subtitles{
             display: flex;
@@ -238,6 +240,10 @@
 
             margin-bottom: .625rem;
         }
+    }
+    @include desktop{
+        width: 60rem;
+        margin: auto;
     }
 }
 
