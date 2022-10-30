@@ -2,8 +2,452 @@
 @use './partials/mixins' as *; 
 
 @use './global' as *;
-@use './hero' as *;
-@use './about' as *;
-@use './photo-gallery' as *;
-@use './comments' as *;
 @use './shows' as *;
+
+
+
+// Hero section 
+
+
+.hero{
+    position: relative;
+    color: $heroTextColor; 
+    display:flex;    
+    flex-direction: column;
+    justify-content: center;  
+    padding-top: 3.4375rem;
+    padding-bottom: 3.4375rem; 
+
+
+    @include tablet {
+        padding-top: 8.75rem;
+        padding-bottom: 8.75rem;
+    }
+
+    @include desktop{
+        padding-top: 11.875rem;
+        padding-bottom: 11.875rem;
+    }
+
+
+    &::before {
+        content:' ';
+        position:absolute;
+        top:0px;
+        right:0px;
+        bottom:0px;
+        left:0px;
+        box-shadow: inset 0 0 0 100vh rgb(50,50,50, .5);
+        background-image: url("../../../assets/images/hero-bio.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+
+
+    &__title{
+        position: relative; 
+        font-family: 'Avenir Next Demi';
+        font-size:1.5rem;
+        line-height: 2rem;
+        font-weight: 700;
+        padding-left: 1rem;
+
+
+        @include tablet{
+            font-size: 3.875rem;
+            padding-left:2.5rem; 
+        }
+
+
+        @include desktop{
+            font-size: 3.125rem; 
+            padding-left:6.25rem; 
+        }
+    }
+
+}
+
+
+// About section
+
+
+
+
+.about{
+    padding-right:2.5rem;
+
+    @include tablet{
+        padding-bottom: .9375rem;
+    }
+
+
+    &__title{
+        font-size: 1.25rem;
+        line-height: 2rem;
+        font-weight: 700;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin-bottom: .5625rem;
+        font-family: 'Avenir Next Demi';
+
+    &__title-add{
+        font-family: 'Avenir Next Demi';
+    }
+
+    @include tablet{
+
+        font-size: 2.5rem;
+        margin-bottom: revert;
+        padding-top: 1.25rem;
+        padding-bottom: .625rem;
+        padding-left: 1.6875rem;
+        margin-bottom: 1.25rem;
+
+    }
+
+        @include desktop{
+            font-size: 2.5rem;
+            padding-left: 6.25rem;
+            padding-right: 6.25rem;
+            padding-top: 1.25rem;
+            padding-bottom: .625rem;
+        }
+    }
+    
+    &__image{
+
+        width: 100%;
+        padding-left: 1rem;
+        padding-right: .875rem;
+        max-width: 56.25rem;
+        max-height: 31.25rem;
+
+        @include tablet{
+            display: block;
+
+            margin:auto; 
+        }
+
+    }
+/* This could be used as 
+    a mixin since I have
+    to write this for the
+    footer */
+    &__pargraph{
+        font-size: .5rem;
+        font-weight: 400;
+        line-height: 1.125rem;
+        padding-left: 1rem;
+        padding-right: .1875rem;
+        width: 98%;
+        font-family: 'Avenir Next Bold';
+    }
+    &__pargraph--one{
+        font-size: .83125rem;
+        width: 101.5%;
+        padding-left: .875rem;
+
+        @include tablet{
+
+            font-size: 1.375rem;
+            width: 37.93125rem;
+            line-height: 1.875rem;
+            font-family: "Avenir Next Demi";
+            padding-left: 5.625rem;
+
+        }
+
+        @include desktop{
+            padding-left: 12.625rem;
+            padding-right: 2.125rem;
+            font-size: 1.49375rem;
+            width: 57.5%;
+            font-family: 'Avenir Next Demi';
+        }
+    }
+
+    @include tablet{
+
+        &__pargraph--add-style{
+            font-size: 1.18125rem;
+            width: 57.5%;
+            font-family: "Avenir Next bold";
+        }
+    }
+    &__sub-title{
+        font-family: 'Avenir Next Demi';
+        padding-left: 1.18125rem; 
+        font-size: .9375rem;
+        padding-top: .3125rem;
+
+        @include tablet{
+            font-family: "Avenir Next Demi";
+            padding-left: 1rem;
+            font-size: 1.5rem;
+            padding-top: 1.375rem;
+            padding-left: 5.625rem;
+            margin-bottom: .625rem;
+        }
+
+            @include desktop{
+            font-family: "Avenir Next Demi";
+            padding-left: 1rem;
+            font-size: 1.5rem;
+            padding-top: 1.375rem;
+            padding-left: 12.5rem;
+        }
+    }
+
+    
+    &__pargraph--two{
+        color: rgb(50,50,50); 
+        font-size: 0.75rem;
+        font-family: "Avenir Next demi";
+        /* font-size: 12px; */
+        width: 95%;
+
+        @include tablet{
+            font-size: .875rem;
+            font-family: "Avenir Next demi";
+            width: 72.5%;
+            display: flex;
+            gap: 1.5rem;
+            padding-left: 5.625rem;
+            line-height: 1.25rem;
+        }
+
+    }
+
+    @include desktop{
+
+       &__pargraph-section{
+            display: flex;
+            width: 70%;
+            gap: 1.3125rem;
+            padding-left: 12.5rem;
+            font-family: 'Avenir Next demi';
+            font-size: .975rem;
+            line-height: 1.6875rem;
+        }
+    }
+}
+
+
+// Photo gallery section
+
+
+
+.photo-gallery{
+
+    padding-right: 1rem;
+    padding-left: 1rem; 
+    background-color: rgb(250,250,250);
+    padding-top: .0625rem;
+    font-family: 'Avenir Next Demi';
+    
+
+    @include tablet{
+        padding-bottom: .625rem; 
+
+        
+        &__title{
+            padding-left: 2.1875rem;
+            font-size:1.875rem; 
+        }
+
+        &__images{
+            display: flex;
+            flex-wrap: wrap;
+            padding-left: 1.5625rem;
+            justify-content: space-around;
+            padding-right: 1.5625rem;
+        }
+    }
+
+    @include desktop{
+
+        &__title{
+            padding-left:6.25rem; 
+            font-size:1.875rem; 
+        }
+
+        &__images{
+            padding-left: 4.6875rem;
+            justify-content: space-evenly;
+            padding-right: 4.6875rem;
+        }
+    }
+
+    &__images--add{
+        width: 100%;
+        padding-bottom: 1rem;
+        filter: grayscale(90%);
+
+        @include tablet{
+            width: 30%; 
+        }
+        
+    }
+
+    &__images--add:hover{
+        filter:grayscale(0%); 
+        transition: 3s;
+    }
+}
+
+
+//Comments section
+
+
+
+.comments{
+
+    background-color: white; 
+    padding-top: 0.0625rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 1.25rem;
+
+    &__container{
+        display:flex; 
+        // width:100%; 
+        gap:14px;
+        margin: auto;
+        padding-bottom: 1.5625rem;
+
+        .container__logo-image{
+            border-radius: 50%;
+            width: 2.25rem;
+            max-width: 2.25rem;
+            max-height: 2.25rem;
+            height: 2.3125rem;
+            margin-top: 1.3125rem;
+            margin-bottom: 1.3125rem;
+        }
+    }
+
+    &__title{
+        font-family: 'Avenir Next Demi';
+        // font-size:1.875rem; 
+        font-size: 1.875rem;
+        margin-bottom: .625rem;
+    }
+
+}
+
+.form{
+    // width: 85%; 
+    color: black; 
+
+    &__section{
+        width:100%; 
+        display:flex;
+        // flex-direction: column;
+    }
+
+    &__section--input{
+    background-color: #ececec;
+    padding-top: .4375rem;
+    padding-bottom: .4375rem;
+    padding-left: .25rem;
+    color: black;
+    /* max-width: 368px; */
+    min-width: 211px;
+
+
+    }
+
+    &__section--comment-box{
+        height: 4.3125rem;
+        text-decoration: none;
+        padding-left: .25rem;
+        background-color: #ececec;
+
+            
+    }
+
+    &__section--button{
+        padding-right: 1.875rem;
+        padding-left: 4.8125rem;
+        width: 104%;
+        padding-top: .4375rem;
+        padding-bottom: .4375rem;
+        border-radius: .25rem;
+        background-color: black;
+        color: white;
+        font-family: "Avenir Next Demi";
+        margin-top: 10px;
+}
+    
+
+    &__section--label{
+        padding-bottom:.3125rem;
+        font-family: 'Avenir Next Bold';
+        color: black;
+        font-size: .78125rem;
+    }
+
+    &__section--comment-logo{
+        font-family: 'Avenir Next Bold';
+        padding-top: .9375rem;
+        padding-bottom: .3125rem;
+        font-size: .78125rem;
+    }
+}
+
+
+.post-info-container{
+    width:100%;
+    background-color: white;
+    font-family:"Avenir Next Regular"; 
+}
+
+.current-comment{
+    width: 100%;
+    background-color: white; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-bottom: 1.5px solid gray;
+    font-family: "Avenir Next regular";
+    font-size: 1rem;
+    font-weight: 600;
+
+    &__image{
+        border-radius: 50%;
+        width: 2.25rem;
+        max-width: 2.25rem;
+        background-color: gray;
+        height: 2.4375rem;
+        margin-left: .4375rem;
+        margin-top: 1.1875rem; 
+    }
+
+    &__name{
+        padding-right: 5rem;
+        margin-bottom: 0rem;
+        padding-top: 11px;
+    }
+
+    &__name{
+        padding-right: .6875rem;
+        margin-bottom: 0px;
+        margin-top: .8125rem;
+        padding-left: .25rem;
+        width: 32%;
+    }
+
+    &__date{
+        padding-right: .4375rem;
+        padding-top: .5625rem;
+    
+    }
+
+    &__comment{
+        padding-left: 3.375rem;
+        margin-top: -.6875rem;
+        padding-right: 1.0625rem;
+    }
+
+
+}
